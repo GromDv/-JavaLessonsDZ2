@@ -1,7 +1,9 @@
 package Java_DZ2;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 /**
@@ -16,6 +18,8 @@ public class Java_DZ2 {
 
         System.out.printf("Число %d в степени %d  = %.2f\n", indata[1], indata[0], pow);
 
+        String d_out = String.format("%.2f", pow);
+        writeData("output.txt", d_out);
     }
 
     static double power(int a, int b) {
@@ -47,5 +51,14 @@ public class Java_DZ2 {
             System.out.println(ex.getMessage());
         }
         return res;
+    }
+
+    static void writeData(String file, String data) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file))) {
+            bw.write(data);
+        } catch (IOException ex) {
+            System.out.println("Error writing!");
+            System.out.println(ex.getMessage());
+        }
     }
 }
