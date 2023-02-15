@@ -1,0 +1,10 @@
+февр. 15, 2023 4:34:35 PM Java_DZ2.Java_DZ2 main
+INFO: Начало!
+февр. 15, 2023 4:34:36 PM Java_DZ2.Java_DZ2 readData
+INFO: Входные данные прочитаны!
+февр. 15, 2023 4:34:36 PM Java_DZ2.Java_DZ2 power
+INFO: Расчёт при a = 10, b = 3
+февр. 15, 2023 4:34:36 PM Java_DZ2.Java_DZ2 main
+INFO: Выходные данные: 1000,00
+февр. 15, 2023 4:34:36 PM Java_DZ2.Java_DZ2 writeData
+INFO: Выходные данные записаны!
